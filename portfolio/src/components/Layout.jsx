@@ -11,8 +11,14 @@ import {
   FaMoon,
   FaSun,
 } from "react-icons/fa";
+import { IoBookOutline } from "react-icons/io5";
+import { GoProjectSymlink } from "react-icons/go";
+import { TbSchool } from "react-icons/tb";
+import { GrUserExpert } from "react-icons/gr";
+import { PiCertificateLight } from "react-icons/pi";
 import { useTheme } from "../context/ThemeContext";
-
+import { IoIosContact } from "react-icons/io";
+// import Logo from "../assets/logo.png";
 export default function Layout({ children }) {
   const theme = useTheme();
   const location = useLocation();
@@ -25,11 +31,20 @@ export default function Layout({ children }) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <FaGithub className={`h-8 w-8 ${theme.text}`} />
+              {/* <FaGithub className={`h-8 w-8 ${theme.text}`} /> */}
+              {/* <Logo /> */}
+              <img
+                src="/src/assets/logo.png"
+                className="h-10 w-10 object-fill rounded-full"
+              ></img>
               <span className={`ml-4 ${theme.text} font-semibold`}>
-                Your Name
+                Dheeraj
+                <span className={`${theme.text} text-opacity-55 text-sm`}>
+                  @05
+                </span>
               </span>
             </div>
+            <h1>My Portfolio</h1>
             <button
               onClick={() => theme.setIsDark(!theme.isDark)}
               className={`p-2 rounded-md ${theme.border} border ${theme.text}`}
@@ -52,7 +67,7 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaBook className="mr-2" />
+              <IoBookOutline className="mr-2" />
               Overview
             </Link>
             <Link
@@ -63,7 +78,7 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaBox className="mr-2" />
+              <TbSchool className="mr-2" />
               Education
             </Link>
             <Link
@@ -86,14 +101,14 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaCode className="mr-2" />
+              <GoProjectSymlink className="mr-2" />
               Projects{" "}
               <span
                 className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
                   theme.isDark ? "bg-github-border-dark" : "bg-gray-100"
                 }`}
               >
-                16
+                8
               </span>
             </Link>
             <Link
@@ -104,7 +119,7 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaStar className="mr-2" />
+              <GrUserExpert className="mr-2" />
               Experience
             </Link>
             <Link
@@ -115,7 +130,7 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaStar className="mr-2" />
+              <PiCertificateLight className="mr-2" />
               Certificates
             </Link>
             <Link
@@ -126,7 +141,7 @@ export default function Layout({ children }) {
                   : `hover:border-b-2 ${theme.border}`
               }`}
             >
-              <FaBox className="mr-2" />
+              <IoIosContact className="mr-2 text-lg" />
               Contact
             </Link>
           </div>
@@ -138,21 +153,44 @@ export default function Layout({ children }) {
       <footer className={`border-t ${theme.border} py-8`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center space-x-6">
-            <a href="#" className={`text-gray-400 ${theme.hover}`}>
+            <a
+              href="https://github.com/Dheeraj101097"
+              className={`text-gray-400 ${theme.hover}`}
+            >
               <FaGithub className="h-6 w-6" />
             </a>
             <a href="#" className={`text-gray-400 ${theme.hover}`}>
               <FaTwitter className="h-6 w-6" />
             </a>
-            <a href="#" className={`text-gray-400 ${theme.hover}`}>
+            <a
+              href="https://www.linkedin.com/in/dheerajpatnaik10/"
+              className={`text-gray-400 ${theme.hover}`}
+            >
               <FaLinkedin className="h-6 w-6" />
             </a>
-            <a href="#" className={`text-gray-400 ${theme.hover}`}>
+            <a
+              href="mailto:dheerajap6@gmail.com"
+              className={`text-gray-400 ${theme.hover}`}
+            >
               <FaEnvelope className="h-6 w-6" />
             </a>
           </div>
           <p className="mt-4 text-center text-gray-400">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Dheeraj Portfolio. All rights reserved.
+            <span>
+              <a href="tel:9051290512">Call 9051290512</a>
+            </span>
+          </p>
+          <p className="flex justify-center  space-x-6 text-gray-400">
+            Images {":"}{" "}
+            <span className="mx-1">
+              <a href="https://www.freepik.com/" className="mx-2">
+                Freepik
+              </a>
+              <a href="https://icons8.com/" className="mx-2">
+                Icons
+              </a>
+            </span>
           </p>
         </div>
       </footer>

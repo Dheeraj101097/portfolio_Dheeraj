@@ -6,7 +6,7 @@ export default {
       colors: {
         "github-dark": "#0d1117",
         "github-light": "#ffffff",
-        "github-btn": "#238636",
+        "github-btn": "#e64e4e",
         "github-border-dark": "#30363d",
         "github-border-light": "#d0d7de",
         "github-text-dark": "#c9d1d9",
