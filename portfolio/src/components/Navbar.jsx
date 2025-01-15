@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="text-gray-400 hover:text-white">
+            <button className="text-gray-400 hover:text-white ">
               <Bell size={20} />
             </button>
             <button className="text-gray-400 hover:text-white">

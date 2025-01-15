@@ -4,10 +4,7 @@ import {
   FaTwitter,
   FaLinkedin,
   FaEnvelope,
-  FaBook,
-  FaCode,
   FaStar,
-  FaBox,
   FaMoon,
   FaSun,
 } from "react-icons/fa";

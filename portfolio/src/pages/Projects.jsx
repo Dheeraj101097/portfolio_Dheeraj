@@ -1,7 +1,6 @@
 import Card from "../components/Card";
 import LeftComponent from "../components/LeftComponent";
 import { useTheme } from "../context/ThemeContext";
-import { FaStar } from "react-icons/fa";
 
 export default function Projects() {
   const theme = useTheme();

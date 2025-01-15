@@ -18,9 +18,14 @@ import AccountBalanceRoundedIcon from "@mui/icons-material/AccountBalanceRounded
 import { createTheme } from "@mui/material/styles";
 import { useTheme } from "../context/ThemeContext";
 import LeftComponent from "../components/LeftComponent";
+import { useState, useEffect } from "react";
 
 export default function CustomizedTimeline() {
+  const [count, setCount] = useState();
   const theme = useTheme();
+  useEffect(() => {
+    setCount(localStorage.getItem("Likecount", count));
+  }, []);
   // const theme = createTheme({
   //   palette: {
   //     primary: {

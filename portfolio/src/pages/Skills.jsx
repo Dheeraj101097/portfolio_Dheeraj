@@ -3,8 +3,6 @@ import { useTheme } from "../context/ThemeContext";
 import javascripticon from "../assets/skills/javascript.png";
 import js from "../assets/skills/js.png";
 import react3 from "../assets/skills/react3.png";
-import api from "../assets/skills/api.png";
-import react from "../assets/skills/react.png";
 import arduino from "../assets/skills/arduino.png";
 import css from "../assets/skills/css.png";
 import bootstrap from "../assets/skills/bootstarp.png";
@@ -16,10 +14,9 @@ import npm from "../assets/skills/npm.png";
 import mongodb from "../assets/skills/mongodb.png";
 import firebase from "../assets/skills/firebase.png";
 import mysql from "../assets/skills/mysql.png";
-// import rest from "../assets/skills/rest.png";
-import websocket from "../assets/skills/websocket.gif";
+import socket from "../assets/skills/Socket.io.png";
 import openai from "../assets/skills/openai.png";
-// import ai from "../assets/skills/ai.png";
+import ai from "../assets/skills/ai.png";
 import git from "../assets/skills/git.png";
 import github from "../assets/skills/github.png";
 import vscode from "../assets/skills/vscode2.png";
@@ -31,9 +28,12 @@ import esp32 from "../assets/skills/esp32.png";
 import iot from "../assets/skills/iot.png";
 import expjs from "../assets/skills/expjs.png";
 import postmanicon from "../assets/skills/postman-icon.svg";
-// import controlsystems from "../assets/controlsystems.png";
-// import digitallogic from "../assets/digitallogic.png";
-// import microcontrollers from "../assets/microcontrollers.png";
+import photoshop from "../assets/skills/photoshop.png";
+import prempro from "../assets/skills/prempro.png";
+import canva from "../assets/skills/canva.png";
+import gemini from "../assets/skills/gemini.png";
+import controlsystems from "../assets/skills/electronics1.png";
+import digitallogic from "../assets/skills/electronics2.png";
 
 export default function Skills() {
   const theme = useTheme();
@@ -77,7 +77,7 @@ export default function Skills() {
       items: [
         {
           name: "MongoDB",
-          icon: "https://img.icons8.com/?size=96&id=bosfpvRzNOG8&format=png",
+          icon: mongodb,
         },
 
         {
@@ -139,28 +139,6 @@ export default function Skills() {
     },
 
     {
-      category: "System Integration",
-      items: [
-        {
-          name: "REST APIs",
-          icon: "rest",
-        },
-        {
-          name: "WebSockets",
-          icon: websocket,
-        },
-        {
-          name: "OpenAI",
-          icon: openai,
-        },
-        {
-          name: "AI",
-          icon: "ai",
-        },
-      ],
-    },
-
-    {
       category: "Tools",
       items: [
         {
@@ -178,6 +156,35 @@ export default function Skills() {
         {
           name: "Postman",
           icon: postmanicon,
+        },
+        {
+          name: "Photoshop",
+          icon: photoshop,
+        },
+        {
+          name: "Premiere Pro",
+          icon: prempro,
+        },
+        {
+          name: "Canva",
+          icon: canva,
+        },
+      ],
+    },
+    {
+      category: "System Integration",
+      items: [
+        {
+          name: "Socketio",
+          icon: socket,
+        },
+        {
+          name: "OpenAI",
+          icon: openai,
+        },
+        {
+          name: "REST APIs",
+          icon: gemini,
         },
       ],
     },
@@ -198,20 +205,21 @@ export default function Skills() {
         },
       ],
     },
+
     {
       category: "Coursework",
       items: [
         {
           name: "Control Systems",
-          icon: "https://example.com/icons/controlsystems.png",
+          icon: controlsystems,
         },
         {
           name: "Digital Logic Design",
-          icon: "https://example.com/icons/digitallogic.png",
+          icon: digitallogic,
         },
         {
-          name: "Microprocessors and Microcontrollers",
-          icon: "https://example.com/icons/microcontrollers.png",
+          name: "ai",
+          icon: ai,
         },
       ],
     },
@@ -242,9 +250,14 @@ export default function Skills() {
                           theme.isDark? "bg-github-border-dark" : "bg-gray-100"
                         } */}
                       <img
-                        className="h-10 w-10 hover:drop-shadow-lg hover:scale-125"
+                        className="h-10 w-10 hover:scale-125 transition-transform  duration-300 ease-in-out filter  hover:drop-shadow-[0_6px_5px_rgba(255,215,0,0.7)]   "
                         src={skill.icon}
                       />
+                      {/* <img
+                        className="h-10 w-10  hover:scale-125 hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:shadow-lg hover:shadow-blue-500/50 hover:brightness-110"
+                        src={skill.icon}
+                        alt="Skill Icon"
+                      /> */}
                     </span>
                   ))}
                 </div>

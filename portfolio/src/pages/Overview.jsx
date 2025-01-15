@@ -1,5 +1,9 @@
+// import AroundText from "../components/AroundText";
 import LeftComponent from "../components/LeftComponent";
 import { useTheme } from "../context/ThemeContext";
+import iot from "../assets/img1.svg";
+import img2 from "../assets/img2.svg";
+import lang from "../assets/img3.svg";
 
 export default function Overview() {
   const theme = useTheme();
@@ -21,31 +25,26 @@ export default function Overview() {
               ahead of emerging trends to craft innovative, future-ready
               solutions.
             </p>
-            <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div
-                className={`border ${theme.border} rounded-md p-4 text-center`}
-              >
-                <div className={`text-2xl font-bold ${theme.text}`}>50+</div>
-                <div className="text-gray-400">Projects</div>
+
+            <div className="mt-6  grid grid-cols-2 md:grid-cols-4 gap-2 ">
+              <div className={` rounded-md p-4 text-center`}>
+                <div className={`text-2xl font-bold ${theme.bg}`}>
+                  {" "}
+                  <img src={img2} />{" "}
+                </div>
               </div>
-              <div
-                className={`border ${theme.border} rounded-md p-4 text-center`}
-              >
-                <div className={`text-2xl font-bold ${theme.text}`}>1000+</div>
-                <div className="text-gray-400">Contributions</div>
+              <div className={` rounded-md p-4 text-center`}>
+                <div className={`text-2xl font-bold ${theme.bg}`}>
+                  {" "}
+                  <img src={lang} />{" "}
+                </div>
               </div>
-              <div
-                className={`border ${theme.border} rounded-md p-4 text-center`}
-              >
-                <div className={`text-2xl font-bold ${theme.text}`}>100+</div>
-                <div className="text-gray-400">Stars</div>
-              </div>
-              <div
-                className={`border ${theme.border} rounded-md p-4 text-center`}
-              >
-                <div className={`text-2xl font-bold ${theme.text}`}>50+</div>
-                <div className="text-gray-400">Followers</div>
-              </div>
+              {/* <div className={` rounded-md p-4 text-center`}>
+                <div className={`text-2xl font-bold ${theme.bg}`}>
+                  {" "}
+                  <img src={img2} />{" "}
+                </div>
+              </div> */}
             </div>
           </div>
         </div>

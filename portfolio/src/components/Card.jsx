@@ -21,7 +21,8 @@ const Card = () => {
     },
     {
       title: "Rice Grain Length Analysis System",
-      description: "A Rice Grain Length Analysis System | real-time data.",
+      description:
+        "A Rice Grain Length Grain Length Analysis System | real-time data.",
       image: ricegrain,
     },
     {
@@ -67,13 +68,13 @@ const Card = () => {
 
   return (
     <>
-      <div className="p-4">
+      <div className="p-4 ">
         {/* Responsive Grid Container */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
           {projectsData.map((project, i) => (
             <div
               key={i}
-              className={`border ${theme.border} rounded-md p-4 shadow-md`}
+              className={`border ${theme.border}  rounded-md p-4 mx-4 shadow-md hover:shadow-xl hover:shadow-[#99F7FF]`}
             >
               {/* Project Image */}
               <div className="w-full h-48 bg-sky-300 rounded-lg overflow-hidden mb-4">
@@ -90,9 +91,9 @@ const Card = () => {
                   {project.description}
                 </p>
               </div>
-              {/* Action Buttons */}
+              {/* Action Buttons 57f8b2*/}
               <div className="flex justify-between">
-                <button className="bg-sky-600 text-white font-medium px-4 py-2 rounded-md hover:bg-sky-500 transition">
+                <button className=" bg-[#38FAC6] hover:bg-[#30d4a8] text-[#000000] font-medium px-4 py-2 rounded-md transition">
                   View Project
                 </button>
                 <button
@@ -116,7 +117,7 @@ const Card = () => {
           {coreProjects.map((project, i) => (
             <div
               key={i}
-              className={`border ${theme.border} rounded-md p-4 shadow-md`}
+              className={`border ${theme.border} rounded-md p-4 mx-8 shadow-md hover:shadow-xl hover:shadow-[#99F7FF]`}
             >
               {/* Project Image */}
               <div className="w-full h-48 bg-sky-300 rounded-lg overflow-hidden mb-4">
@@ -135,7 +136,7 @@ const Card = () => {
               </div>
               {/* Action Buttons */}
               <div className="flex justify-between">
-                <button className="bg-sky-400 text-white font-medium px-4 py-2 rounded-md hover:bg-sky-500 transition">
+                <button className="bg-[#FF4797] hover:bg-[#FF006E] text-[#ffeaf3] font-medium px-4 py-2 rounded-md  transition">
                   View Project
                 </button>
                 <button

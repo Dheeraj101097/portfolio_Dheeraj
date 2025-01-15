@@ -8,6 +8,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Certificate from "./pages/Certificate";
+import Experience from "./pages/Experience";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ function App() {
               <Route path="/skills" element={<Skills />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/education" element={<Education />} />
+              <Route path="/experience" element={<Experience />} />
               <Route path="/certificates" element={<Certificate />} />
             </Routes>
           </Layout>

@@ -1,6 +1,8 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import LeftComponent from "../components/LeftComponent";
+import Like from "../components/Like";
+import Star from "../components/Star";
 
 const Certificate = () => {
   const theme = useTheme();
@@ -11,7 +13,8 @@ const Certificate = () => {
           {/* left */}
           <LeftComponent />
           {/* right */}
-          <div className="grid grid-cols-2 gap-6 mx-10">
+          <Star />
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-6 mx-6 mt-8">
             <div
               className={`relative flex w-80 flex-col rounded-xl ${theme.bg}  bg-clip-border text-gray-700 shadow-md`}
             >
@@ -64,6 +67,7 @@ const Certificate = () => {
                   >
                     View Certificate
                   </a>
+                  {/* <Star /> */}
                 </p>
               </div>
             </div>
