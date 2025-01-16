@@ -20,7 +20,6 @@ import ai from "../assets/skills/ai.png";
 import git from "../assets/skills/git.png";
 import github from "../assets/skills/github.png";
 import vscode from "../assets/skills/vscode2.png";
-import postman from "../assets/skills/postman.png";
 import tailwind from "../assets/skills/tailwindcss.png";
 import materialui from "../assets/skills/maiterialui.png";
 import shadcn from "../assets/skills/shadcn.png";
@@ -157,18 +156,6 @@ export default function Skills() {
           name: "Postman",
           icon: postmanicon,
         },
-        {
-          name: "Photoshop",
-          icon: photoshop,
-        },
-        {
-          name: "Premiere Pro",
-          icon: prempro,
-        },
-        {
-          name: "Canva",
-          icon: canva,
-        },
       ],
     },
     {
@@ -223,6 +210,23 @@ export default function Skills() {
         },
       ],
     },
+    {
+      category: "Graphic Design",
+      items: [
+        {
+          name: "Photoshop",
+          icon: photoshop,
+        },
+        {
+          name: "Premiere Pro",
+          icon: prempro,
+        },
+        {
+          name: "Canva",
+          icon: canva,
+        },
+      ],
+    },
   ];
 
   return (
@@ -235,7 +239,7 @@ export default function Skills() {
             {skillsData.map((skills, index) => (
               <div
                 key={index}
-                className={`border ${theme.border} rounded-md p-3 `}
+                className={` ${theme.border} ${theme.bg} border-2  ${theme.text}  rounded-md p-3 `}
               >
                 <h3 className={`text-xl font-semibold ${theme.text} mb-2`}>
                   {skills.category}
@@ -246,11 +250,8 @@ export default function Skills() {
                       key={index}
                       className={`pl-2 py-1  rounded-full text-sm ${theme.text}`}
                     >
-                      {/*  ${
-                          theme.isDark? "bg-github-border-dark" : "bg-gray-100"
-                        } */}
                       <img
-                        className="h-10 w-10 hover:scale-125 transition-transform  duration-300 ease-in-out filter  hover:drop-shadow-[0_6px_5px_rgba(255,215,0,0.7)]   "
+                        className="h-12 w-12 hover:scale-125 transition-transform  duration-300 ease-in-out filter  hover:drop-shadow-[0_6px_5px_rgba(255,215,0,0.7)]   "
                         src={skill.icon}
                       />
                       {/* <img

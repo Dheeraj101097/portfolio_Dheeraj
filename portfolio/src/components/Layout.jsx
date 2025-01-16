@@ -28,13 +28,11 @@ export default function Layout({ children }) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              {/* <FaGithub className={`h-8 w-8 ${theme.text}`} /> */}
-              {/* <Logo /> */}
               <img
-                src="/src/assets/logo.png"
+                src="/src/assets/logo1.png"
                 className="h-10 w-10 object-fill rounded-full"
               ></img>
-              <span className={`ml-4 ${theme.text} font-semibold`}>
+              <span className={`ml-2 ${theme.text} font-semibold`}>
                 Dheeraj
                 <span className={`${theme.text} text-opacity-55 text-sm`}>
                   @05
@@ -174,19 +172,9 @@ export default function Layout({ children }) {
           </div>
           <p className="mt-4 text-center text-gray-400">
             © {new Date().getFullYear()} Dheeraj Portfolio. All rights reserved.
+            <br />
             <span>
-              <a href="tel:9051290512">Call 9051290512</a>
-            </span>
-          </p>
-          <p className="flex justify-center  space-x-6 text-gray-400">
-            Images {":"}{" "}
-            <span className="mx-1">
-              <a href="https://www.freepik.com/" className="mx-2">
-                Freepik
-              </a>
-              <a href="https://icons8.com/" className="mx-2">
-                Icons
-              </a>
+              <a href="tel:9051290512">Get in touch with me : +91 9337656566</a>
             </span>
           </p>
         </div>

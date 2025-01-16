@@ -1,8 +1,6 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import LeftComponent from "../components/LeftComponent";
-import Like from "../components/Like";
-import Star from "../components/Star";
 
 const Certificate = () => {
   const theme = useTheme();
@@ -13,10 +11,10 @@ const Certificate = () => {
           {/* left */}
           <LeftComponent />
           {/* right */}
-          <Star />
+
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-6 mx-6 mt-8">
             <div
-              className={`relative flex w-80 flex-col rounded-xl ${theme.bg}  bg-clip-border text-gray-700 shadow-md`}
+              className={`relative flex w-80 flex-col rounded-2xl ${theme.bg} border-2 ${theme.border} ${theme.text} bg-clip-border shadow-md`}
             >
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-100 to-orange-200 hover:shadow-lg hover:shadow-orange-300">
                 <img
@@ -45,7 +43,7 @@ const Certificate = () => {
             {/* 2 */}
 
             <div
-              className={`relative ${theme.bg} flex w-80 flex-col rounded-xl bg-clip-border text-gray-700 shadow-md`}
+              className={`relative ${theme.bg} ${theme.bg} border-2 ${theme.border} ${theme.text} flex w-80 flex-col rounded-2xl bg-clip-border  shadow-md`}
             >
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-green-100 to-green-200 hover:shadow-lg hover:shadow-emerald-300">
                 <img

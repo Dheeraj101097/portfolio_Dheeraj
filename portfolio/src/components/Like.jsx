@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { useTheme } from "../context/ThemeContext";
-
+// bg-[#ffe8d0]
 const Like = () => {
   const theme = useTheme();
   return (
-    <div className=" bg-[#ffe8d0] bg-opacity-80 w-fit h-fit mt-4 mx-6 rounded-full">
+    <div
+      className={`${theme.bg}  bg-opacity-80 w-fit h-fit mt-4 mx-6 rounded-full`}
+    >
       <StyledWrapper>
         <div className="like-dislike-container ">
           <div className="icons">
-            <label className="btn-label" htmlFor="like-checkbox">
-              <span className="text-black">Like</span>
+            <label className="btn-label  rounded-full" htmlFor="like-checkbox">
+              <span className="text-black ml-2">Like</span>
               <input
                 className="input-box "
                 id="like-checkbox"
@@ -162,6 +164,7 @@ const StyledWrapper = styled.div`
     padding: 0 0.5rem;
     cursor: pointer;
     position: relative;
+    background-color: white;
   }
 
   .like-dislike-container .like-text-content {
