@@ -7,7 +7,6 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
-import SchoolIcon from "@mui/icons-material/School";
 import SchoolRoundedIcon from "@mui/icons-material/SchoolRounded";
 import MenuBookSharpIcon from "@mui/icons-material/MenuBookSharp";
 import AccountBalanceRoundedIcon from "@mui/icons-material/AccountBalanceRounded";
@@ -98,6 +97,7 @@ export default function CustomizedTimeline() {
                 </TimelineDot>
                 <TimelineConnector sx={{ bgcolor: "secondary.light" }} />
               </TimelineSeparator>
+
               <TimelineContent sx={{ py: "12px", px: 2 }}>
                 <Typography
                   variant=""

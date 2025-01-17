@@ -32,14 +32,15 @@ export default function Layout({ children }) {
                 src="/src/assets/logo1.png"
                 className="h-10 w-10 object-fill rounded-full"
               ></img>
-              <span className={`ml-2 ${theme.text} font-semibold`}>
-                Dheeraj
-                <span className={`${theme.text} text-opacity-55 text-sm`}>
-                  @05
+              <Link to="/">
+                <span className={`ml-2 ${theme.text} font-semibold`}>
+                  Dheeraj
+                  <span className={`${theme.text} text-opacity-55 text-sm`}>
+                    @05
+                  </span>
                 </span>
-              </span>
+              </Link>
             </div>
-            <h1>My Portfolio</h1>
             <button
               onClick={() => theme.setIsDark(!theme.isDark)}
               className={`p-2 rounded-md ${theme.border} border ${theme.text}`}
@@ -103,7 +104,7 @@ export default function Layout({ children }) {
                   theme.isDark ? "bg-github-border-dark" : "bg-gray-100"
                 }`}
               >
-                8
+                6
               </span>
             </Link>
             <Link
@@ -175,6 +176,25 @@ export default function Layout({ children }) {
             <br />
             <span>
               <a href="tel:9051290512">Get in touch with me : +91 9337656566</a>
+            </span>
+            <br />
+            <span>
+              Images & Icons :
+              <a
+                target="_blank"
+                href="https://www.freepik.com"
+                className="mx-2 hover:underline-offset-2 hover:underline"
+              >
+                Freepik
+              </a>
+              <>|</>
+              <a
+                target="_blank"
+                href="https://icons8.com"
+                className="ml-2 hover:underline-offset-2 hover:underline"
+              >
+                Icons8
+              </a>
             </span>
           </p>
         </div>

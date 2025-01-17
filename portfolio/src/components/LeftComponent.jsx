@@ -27,11 +27,15 @@ const LeftComponent = () => {
       </p>
       <div className="flex flex-row justify-center">
         <button class="relative mt-4 mr-5  inline-flex  active:scale-95 transistion overflow-hidden rounded-lg p-[2px] focus:outline-none">
-          <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"></span>
+          <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ff0aad_0%,#fa89c4_50%,#ac35ff_100%)]"></span>
+
           <span
-            class={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg ${theme.bg} ${theme.text} px-3 text-sm font-medium backdrop-blur-3xl gap-2 undefined`}
+            class={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg ${theme.bg} ${theme.text} px-3  text-sm font-medium backdrop-blur-3xl gap-2 undefined`}
           >
-            <a href="https://drive.google.com/file/d/1UxJxd4Ju7NI7sReVIc19CZ_5RTX87j_7/view?usp=sharing">
+            <a
+              href="https://drive.google.com/file/d/1UxJxd4Ju7NI7sReVIc19CZ_5RTX87j_7/view?usp=sharing"
+              target="_blank"
+            >
               View Resume
             </a>
             <svg
@@ -56,3 +60,6 @@ const LeftComponent = () => {
 export default LeftComponent;
 
 // #ff5722
+// ac35ff bd5fff   30 span elemnt
+// pink 50% f472b6
+// e7029a 0%

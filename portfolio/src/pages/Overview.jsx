@@ -1,9 +1,6 @@
 // import AroundText from "../components/AroundText";
 import LeftComponent from "../components/LeftComponent";
 import { useTheme } from "../context/ThemeContext";
-import iot from "../assets/img1.svg";
-import img2 from "../assets/img2.svg";
-import lang from "../assets/img3.svg";
 import TextSlide from "../components/TextSlide";
 
 export default function Overview() {
@@ -29,38 +26,9 @@ export default function Overview() {
               with precision and adaptability, I am committed to staying ahead
               of emerging trends to craft innovative, future-ready solutions.
             </p>
-
-            {/* <div className="mt-2 mx-auto  grid grid-cols-2 md:grid-cols-4 gap-2 ">
-              <div className={` rounded-md p-4 text-center`}>
-                <div className={`text-2xl font-bold ${theme.bg}`}>
-                  {" "}
-                  <img src={img2} />{" "}
-                </div>
-              </div>
-              <div className={` rounded-md p-4 text-center`}>
-                <div className={`text-2xl font-bold ${theme.bg}`}>
-                  {" "}
-                  <img src={lang} />{" "}
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
     </div>
   );
-}
-
-{
-  /* <p className="flex justify-center  space-x-6 text-gray-400">
-  Images {":"}{" "}
-  <span className="mx-1">
-    <a href="https://www.freepik.com/" className="mx-2">
-      Freepik
-    </a>
-    <a href="https://icons8.com/" className="mx-2">
-      Icons
-    </a>
-  </span>
-</p>; */
 }

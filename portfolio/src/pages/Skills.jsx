@@ -27,7 +27,7 @@ import esp32 from "../assets/skills/esp32.png";
 import iot from "../assets/skills/iot.png";
 import expjs from "../assets/skills/expjs.png";
 import postmanicon from "../assets/skills/postman-icon.svg";
-import photoshop from "../assets/skills/photoshop.png";
+import photoshop from "../assets/skills/photoshop1.png";
 import prempro from "../assets/skills/prempro.png";
 import canva from "../assets/skills/canva.png";
 import gemini from "../assets/skills/gemini.png";
@@ -83,15 +83,14 @@ export default function Skills() {
           name: "Express.js",
           icon: expjs,
         },
-
         {
           name: "Node.js",
           icon: node,
         },
-        {
-          name: "npm",
-          icon: npm,
-        },
+        // {
+        //   name: "npm",
+        //   icon: npm,
+        // },
       ],
     },
     {
@@ -254,11 +253,6 @@ export default function Skills() {
                         className="h-12 w-12 hover:scale-125 transition-transform  duration-300 ease-in-out filter  hover:drop-shadow-[0_6px_5px_rgba(255,215,0,0.7)]   "
                         src={skill.icon}
                       />
-                      {/* <img
-                        className="h-10 w-10  hover:scale-125 hover:drop-shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:shadow-lg hover:shadow-blue-500/50 hover:brightness-110"
-                        src={skill.icon}
-                        alt="Skill Icon"
-                      /> */}
                     </span>
                   ))}
                 </div>
