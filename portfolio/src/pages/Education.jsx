@@ -178,7 +178,7 @@ export default function CustomizedTimeline() {
                 </Typography>
                 <br />
                 <Typography color="lightblue" variant="" className={`text-sm `}>
-                  ICSE,Delhi (94%)
+                  ICSE (94%)
                 </Typography>
               </TimelineContent>
             </TimelineItem>

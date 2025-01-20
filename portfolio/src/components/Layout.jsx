@@ -54,7 +54,7 @@ export default function Layout({ children }) {
           </div>
         </nav>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex space-x-6 overflow-x-auto">
+          <div className="flex space-x-1 overflow-x-auto">
             <Link
               to="/"
               className={`flex items-center px-3 py-2 ${theme.text} ${
