@@ -23,8 +23,10 @@ export default function Layout({ children }) {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className={`min-h-screen ${theme.bg}`}>
-      <header className={`border-b ${theme.border}`}>
+    <div className={`min-h-screen ${theme.bg} `}>
+      <header
+        className={`border-b ${theme.border} sticky top-0 z-50 ${theme.bg} `}
+      >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">

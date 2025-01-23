@@ -4,7 +4,7 @@ import { IoArrowBack } from "react-icons/io5";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import speeddetector from "../assets/projects/speeddetection.png";
 import ricegrain from "../assets/projects/riceproject.jpg";
-import smartAgri from "../assets/projects/smartfarming.jpg";
+import smartAgri from "../assets/projects/smart farmimg.jpg";
 import portfolio from "../assets/projects/portfolio.png";
 import Star from "../components/Star";
 import recipe from "../assets/projects/img2.png";
@@ -100,6 +100,7 @@ const Card = () => {
         "Developed a predictive irrigation system using IoT sensors, featuring real-time data monitoring, automated pump control, crop-specific recommendations, and dynamic dashboards for efficient water management.",
       image2: smartAgri,
       githubLink: "https://github.com/Dheeraj101097",
+      livelink: "https://github.com/Dheeraj101097/",
       description2: [
         "Designed and implemented a predictive irrigation system integrating Firebase Realtime Database and IoT sensors (DHT11, soil moisture) for real-time data monitoring.",
         "Developed dynamic graphical dashboards using Chart.js to visually represent sensor data, enhancing decision-making efficiency.",
@@ -117,9 +118,10 @@ const Card = () => {
       image2: pwm,
       githubLink: "https://github.com/Dheeraj101097/pwm_motor.git",
       description2: [
-        "Designed a speed detection system for traffic management applications capable of measuring the velocity of moving objects using IR sensors and ESP32.",
-        "Implemented an API endpoint to upload sensor data via POST requests, ensuring seamless data transmission.",
-        "Streamlined data flow between hardware and web interface, demonstrating efficient communication between IoT devices and backend systems.",
+        "ADC Implementation: Developed projects utilizing Analog-to-Digital Conversion (ADC) to measure sensor data with precision, including temperature, light intensity, and voltage levels.",
+        "PWM Control: Designed and implemented Pulse Width Modulation (PWM) techniques for motor speed control, LED brightness adjustment, and servo motor positioning.",
+        "Interrupt-Driven Systems: Built robust embedded systems leveraging hardware and software interrupts for time-critical applications, enhancing efficiency and performance.",
+        "Timer-Based Applications: Created real-time timer-based projects, such as delay generators and event schedulers, using Arduino's timer libraries and direct register-level programming.",
       ],
     },
   ];
@@ -218,11 +220,11 @@ const Card = () => {
                   />
                 </div>
                 {selectedModel.livelink ? (
-                  <button className="bg-[#fd7954] hover:  px-3 py-[0.075rem]  flex justify-center items-center align-middle gap-2 rounded-md transition">
-                    <a href={selectedModel.livelink} className="text-white">
+                  <button className="bg-[#25ffd3] bg-gradient-to-l from-[#25ffd3] via-[#65ffe0] to-[#cefff5]  hover:bg-[#2ec8a9]  px-3 py-[0.075rem]  flex justify-center items-center align-middle gap-2 rounded-md transition">
+                    <a href={selectedModel.livelink} className="text-green-950">
                       View Live
                     </a>
-                    <LuSquareArrowOutUpRight />
+                    <LuSquareArrowOutUpRight className="text-green-950" />
                   </button>
                 ) : (
                   <></>
@@ -240,9 +242,10 @@ const Card = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div>{" "}
+              {/* //FF006E */}
               <div className="flex justify-end space-x-4 mt-3">
-                <button className=" bg-gradient-to-br from-[#FF006E] via-[#ff569f] to-[#ffb0d2] hover:bg-[#FF006E]   text-[#fff4f9] px-2 py-1 rounded-lg transition ">
+                <button className=" bg-gradient-to-br from-[#ff0051] via-[#ff566a] to-[#ffb0bd] hover:bg-[#FF006E]   text-[#fff4f9] px-2 py-1 rounded-lg transition ">
                   <a
                     href={selectedModel.githubLink}
                     target="_blank"

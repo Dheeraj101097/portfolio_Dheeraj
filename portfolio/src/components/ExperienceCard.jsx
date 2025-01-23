@@ -9,7 +9,7 @@ const ExperienceCard = ({ elem }) => {
     <>
       <div>
         {elem.map((exp, i) => (
-          <div className={`mb-4`}>
+          <div className={`mb-4 `}>
             <StyledWrapper key={exp.id || i}>
               <div className="notification ">
                 <div className="notiglow" />

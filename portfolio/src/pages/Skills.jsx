@@ -10,7 +10,6 @@ import python from "../assets/skills/python.png";
 import cpp from "../assets/skills/c++.png";
 import html from "../assets/skills/html.png";
 import node from "../assets/skills/node.png";
-import npm from "../assets/skills/npm.png";
 import mongodb from "../assets/skills/mongodb.png";
 import firebase from "../assets/skills/firebase.png";
 import mysql from "../assets/skills/mysql.png";
