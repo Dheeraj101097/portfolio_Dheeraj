@@ -29,3 +29,106 @@
             </label>
           </div> */
 }
+
+// model for projects
+{
+  /* {isOpenModel && (
+          <div
+            className="fixed inset-0 bg-[#00000040] flex justify-center items-center z-50"
+            onClick={closeModel}
+          >
+            <div
+              className={` ${theme.border} ${theme.bg} border-2  ${theme.text} rounded-lg shadow-lg p-6 max-w-4xl w-full mx-4 md:mx-6 lg:mx-8 grid md:grid-cols-3 gap-4 `}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="col-span-1">
+                <button
+                  className={`${theme.border} ${theme.bg} border-2  ${theme.text}  rounded-md transition`}
+                  onClick={closeModel}
+                >
+                  <IoArrowBack />
+                </button>
+                <h2 className={`text-xl font-semibold ${theme.text} mb-2`}>
+                  {selectedModel.title}
+                </h2>
+                <div className="space-y-4">
+                  <div className="w-full h-56 bg-sky-200 rounded-lg overflow-hidden">
+                    <img
+                      src={selectedModel.image2}
+                      alt={`${selectedModel.title}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-span-2 px-8 flex flex-col justify-between">
+                <p className={`${theme.text} mt-9`}>
+                  <ul>
+                    {selectedModel.description2.map((sentence, index) => (
+                      <li key={index}>{sentence}</li>
+                    ))}
+                  </ul>
+                </p>
+                <div className="flex justify-end space-x-4 mt-5">
+                  <a
+                    href={selectedModel.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-gradient-to-tr from-[#38FAC6]  to-[#d2fff3] hover:bg-[#30d4a8] text-[#000000] px-4 py-2 rounded-md transition"
+                  >
+                    View on GitHub
+                  </a>
+                  {selectedModel.livelink ? (
+                    <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-md transition">
+                      <a className="text-sky-500">Live Link</a>
+                    </button>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        )} */
+}
+
+// project button
+{
+  /* <button
+                  className=" bg-gradient-to-br from-[#38FAC6] via-[#96ffe3]  to-[#d2fff3] hover:bg-[#30d4a8] text-[#000000] font-medium px-4 py-2 rounded-md transition"
+                  onClick={() => {
+                    openModel(project);
+                  }}
+                >
+                  View Project
+                </button> */
+}
+
+{
+  /* #99F7FF */
+}
+{
+  /* <div className="w-full h-48 bg-sky-200 rounded-lg overflow-hidden mb-4">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />bg-gradient-to-br from-[#38FAC6] via-[#96ffe3]  to-[#d2fff3] hover:bg-[#30d4a8]
+              </div> */
+}
+
+// bg-[#FF4797] hover:bg-[#FF006E] text-[#ffeaf3] font-medium px-4  py-2 rounded-md  transition rose
+{
+  /* <div className="flex justify-between">
+                <button
+                  className="bg-[#FF4797] hover:bg-[#FF006E] text-[#ffeaf3] font-medium px-4  py-2 rounded-md  transition"
+                  onClick={() => {
+                    openModel(project);
+                  }}
+                >
+                  View Project
+                </button>
+                <Star />
+              </div> */
+}
