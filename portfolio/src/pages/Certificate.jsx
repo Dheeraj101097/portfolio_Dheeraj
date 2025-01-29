@@ -2,8 +2,8 @@ import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import LeftComponent from "../components/LeftComponent";
 import certificate1 from "../assets/certificate_1.png";
-import certificate2 from "../assets/certificate_1.png";
-import certificate3 from "../assets/certificate_1.png";
+import certificate2 from "../assets/certificate_2.png";
+import certificate3 from "../assets/certificate_3.png";
 
 const Certificate = () => {
   const theme = useTheme();

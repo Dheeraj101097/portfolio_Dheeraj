@@ -34,7 +34,7 @@ const LeftComponent = () => {
             class={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg ${theme.bg} ${theme.text} px-3  text-sm font-medium backdrop-blur-3xl gap-2 undefined`}
           >
             <a
-              href="https://drive.google.com/file/d/1UxJxd4Ju7NI7sReVIc19CZ_5RTX87j_7/view?usp=sharing"
+              href="https://drive.google.com/file/d/164QAOlkOXcjeQuoR_ljMnh5I2UwXcaF4/view?usp=sharing"
               target="_blank"
             >
               View Resume
