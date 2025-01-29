@@ -15,7 +15,7 @@ import { GrUserExpert } from "react-icons/gr";
 import { PiCertificateLight } from "react-icons/pi";
 import { useTheme } from "../context/ThemeContext";
 import { IoIosContact } from "react-icons/io";
-// import Logo from "../assets/logo.png";
+import logo from "../assets/logo1.png";
 export default function Layout({ children }) {
   const theme = useTheme();
   const location = useLocation();
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <img
-                src="/src/assets/logo1.png"
+                src={logo}
                 className="h-10 w-10 object-fill rounded-full"
               ></img>
               <Link to="/">

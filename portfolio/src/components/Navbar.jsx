@@ -23,7 +23,7 @@ const Navbar = () => {
                 src="https://github.com/github.png"
                 alt="Profile"
               />
-              <span className="font-semibold text-white">YourName</span>
+              <span className="font-semibold text-white">Dheeraj</span>
             </Link>
           </div>
 

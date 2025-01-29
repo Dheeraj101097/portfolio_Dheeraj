@@ -1,6 +1,9 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import LeftComponent from "../components/LeftComponent";
+import certificate1 from "../assets/certificate_1.png";
+import certificate2 from "../assets/certificate_1.png";
+import certificate3 from "../assets/certificate_1.png";
 
 const Certificate = () => {
   const theme = useTheme();
@@ -14,10 +17,7 @@ const Certificate = () => {
               className={`relative flex w-[17rem] flex-col rounded-2xl ${theme.bg} border-2 ${theme.border} ${theme.text} bg-clip-border shadow-md mt-1`}
             >
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-100 to-orange-200 hover:shadow-lg hover:shadow-orange-300">
-                <img
-                  src="src/assets/certificate_1.png"
-                  className="p-3 rounded-md"
-                />
+                <img src={certificate1} className="p-3 rounded-md" />
               </div>
               <div className="p-6">
                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -41,10 +41,7 @@ const Certificate = () => {
               className={`relative ${theme.bg} ${theme.bg} border-2 ${theme.border} ${theme.text} flex w-[17rem] flex-col rounded-2xl bg-clip-border  shadow-md mt-1`}
             >
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-green-100 to-green-200 hover:shadow-lg hover:shadow-emerald-300">
-                <img
-                  src="src/assets/certificate_2.png"
-                  className="p-3 rounded-md"
-                />
+                <img src={certificate2} className="p-3 rounded-md" />
               </div>
               <div className="p-6">
                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -68,10 +65,7 @@ const Certificate = () => {
               className={`relative w-[17rem] flex  flex-col rounded-2xl ${theme.bg} border-2 ${theme.border} ${theme.text} bg-clip-border shadow-md mt-1`}
             >
               <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-amber-100 to-amber-200 hover:shadow-lg hover:shadow-amber-300">
-                <img
-                  src="src/assets/certificate_3.png"
-                  className="p-3 rounded-md"
-                />
+                <img src={certificate3} className="p-3 rounded-md" />
               </div>
               <div className="p-6">
                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

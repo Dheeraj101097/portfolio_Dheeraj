@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { AiOutlineLike } from "react-icons/ai";
 import Like from "./Like";
+import profile from "../assets/Display_pic.jpg";
 
 const LeftComponent = () => {
   const theme = useTheme();
@@ -14,7 +15,7 @@ const LeftComponent = () => {
         className={`w-72 h-72 rounded-full overflow-hidden border-2 border-[#ffe386]`}
       >
         <img
-          src="src/assets/Display_pic.jpg"
+          src={profile}
           alt="Profile"
           className="w-full h-full object-cover"
         />
