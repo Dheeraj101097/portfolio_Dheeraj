@@ -4,6 +4,7 @@ import LeftComponent from "../components/LeftComponent";
 import certificate1 from "../assets/certificate_1.png";
 import certificate2 from "../assets/certificate_2.png";
 import certificate3 from "../assets/certificate_3.png";
+import certificate4 from "../assets/certificate_4.png";
 
 const Certificate = () => {
   const theme = useTheme();
@@ -12,30 +13,31 @@ const Certificate = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex flex-col md:flex-row items-start gap-8 ">
           <LeftComponent />
-          <div className="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-3 mx-4 mt-8 ">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 mx-4 mt-8 ">
             <div
               className={`relative flex w-[17rem] flex-col rounded-2xl ${theme.bg} border-2 ${theme.border} ${theme.text} bg-clip-border shadow-md mt-1`}
             >
-              <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-100 to-orange-200 hover:shadow-lg hover:shadow-orange-300">
-                <img src={certificate1} className="p-3 rounded-md" />
+              <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-100 to-blue-200 hover:shadow-lg hover:shadow-blue-300">
+                <img src={certificate4} className="p-3 rounded-md" />
               </div>
               <div className="p-6">
                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  Masterclass on Leveraging Generative AI for Strategic Growth.
+                  Hacktivate 24-Hour Hackathon (Competing 100+ teams)
                 </h5>
                 <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                  Issued by: Physics Wallah
-                  <br></br> Date: November 30, 2024
+                  Issued by: GFGAUSC
+                  <br></br> Date: February 6–7, 2025
                   <br></br>
                   <a
                     className="text-blue-300 hover:text-blue-500 font-medium "
-                    href="https://pwskills.com/learn/certificate/5e48d4a7-fab6-407a-9d31-7cca76c2a937/"
+                    href="https://drive.google.com/file/d/1uVkhC4UgRpXzxdBDM_Bkq4S-FcOK-M5g/view?usp=sharing"
                   >
                     View Certificate
                   </a>
                 </p>
               </div>
             </div>
+            {/*  */}
 
             <div
               className={`relative ${theme.bg} ${theme.bg} border-2 ${theme.border} ${theme.text} flex w-[17rem] flex-col rounded-2xl bg-clip-border  shadow-md mt-1`}
@@ -54,6 +56,30 @@ const Certificate = () => {
                     className="text-blue-300 hover:text-blue-500 font-medium
                "
                     href="https://pwskills.com/learn/certificate/f9fb2ebd-284d-4237-9e03-2c4452bdc1ec/"
+                  >
+                    View Certificate
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div
+              className={`relative flex w-[17rem] flex-col rounded-2xl ${theme.bg} border-2 ${theme.border} ${theme.text} bg-clip-border shadow-md mt-1`}
+            >
+              <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-orange-100 to-orange-200 hover:shadow-lg hover:shadow-orange-300">
+                <img src={certificate1} className="p-3 rounded-md" />
+              </div>
+              <div className="p-6">
+                <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Masterclass on Leveraging Generative AI for Strategic Growth.
+                </h5>
+                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                  Issued by: Physics Wallah
+                  <br></br> Date: November 30, 2024
+                  <br></br>
+                  <a
+                    className="text-blue-300 hover:text-blue-500 font-medium "
+                    href="https://pwskills.com/learn/certificate/5e48d4a7-fab6-407a-9d31-7cca76c2a937/"
                   >
                     View Certificate
                   </a>

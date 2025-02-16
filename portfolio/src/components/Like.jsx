@@ -52,8 +52,8 @@ const StyledWrapper = styled.div`
     // --lightest-grey: linear-gradient(#fafafa, #ebebeb);
     // --shadow: 0 5px 15px 0 #00000026;
     // --shadow-active: 0 5px 5px 0 #00000026;
-    --border-radius-main: 10px;
-    --border-radius-icon: 50px;
+    // --border-radius-main: 10px;
+    // --border-radius-icon: 50px;
     position: relative;
     display: flex;
     text-align: center;

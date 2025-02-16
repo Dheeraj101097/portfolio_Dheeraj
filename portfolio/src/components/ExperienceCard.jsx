@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
     isolation: isolate;
     position: relative;
     width: 100%;
-    max-width: 36rem;
+    max-width: 52rem;
     height: auto;
     background: #29292c;
     border-radius: 1rem;

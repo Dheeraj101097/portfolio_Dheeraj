@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LeftComponent from "../components/LeftComponent";
 import { useTheme } from "../context/ThemeContext";
 import javascripticon from "../assets/skills/javascript.png";
@@ -42,14 +43,17 @@ export default function Skills() {
         {
           name: "Javascript",
           icon: js,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Python",
           icon: python,
+          color: "rgb(255,215,0)",
         },
         {
           name: "C++",
           icon: cpp,
+          color: "rgb(255,215,0)",
         },
       ],
     },
@@ -59,14 +63,17 @@ export default function Skills() {
         {
           name: "HTML",
           icon: html,
+          color: "rgb(255,17,0)",
         },
         {
           name: "CSS",
           icon: css,
+          color: "rgb(255,17,0)",
         },
         {
           name: "JavaScript",
           icon: javascripticon,
+          color: "rgb(255,17,0)",
         },
       ],
     },
@@ -76,15 +83,18 @@ export default function Skills() {
         {
           name: "MongoDB",
           icon: mongodb,
+          color: "rgb(255,17,0)",
         },
 
         {
           name: "Express.js",
           icon: expjs,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Node.js",
           icon: node,
+          color: "rgb(255,17,0)",
         },
         // {
         //   name: "npm",
@@ -98,22 +108,27 @@ export default function Skills() {
         {
           name: "Reactjs",
           icon: react3,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Bootstrap",
           icon: bootstrap,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Material UI",
           icon: materialui,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Tailwind CSS",
           icon: tailwind,
+          color: "rgb(255,17,0)",
         },
         {
           name: "shadcn",
           icon: shadcn,
+          color: "rgb(255,17,0)",
         },
       ],
     },
@@ -123,14 +138,17 @@ export default function Skills() {
         {
           name: "MongoDB",
           icon: mongodb,
+          color: "rgb(255,17,0)",
         },
         {
           name: "MySQL",
           icon: mysql,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Firebase",
           icon: firebase,
+          color: "rgb(255,17,0)",
         },
       ],
     },
@@ -141,18 +159,22 @@ export default function Skills() {
         {
           name: "Git",
           icon: git,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Github",
           icon: github,
+          color: "rgb(255,17,0)",
         },
         {
           name: "VS Code",
           icon: vscode,
+          color: "rgb(255,17,0)",
         },
         {
           name: "Postman",
           icon: postmanicon,
+          color: "rgb(255,17,0)",
         },
       ],
     },
@@ -162,14 +184,17 @@ export default function Skills() {
         {
           name: "Socketio",
           icon: socket,
+          color: "rgb(255,17,0)",
         },
         {
           name: "OpenAI",
           icon: openai,
+          color: "rgb(255,17,0)",
         },
         {
           name: "REST APIs",
           icon: gemini,
+          color: "rgb(255,17,0)",
         },
       ],
     },
@@ -248,8 +273,9 @@ export default function Skills() {
                       key={index}
                       className={`pl-2 py-1  rounded-full text-sm ${theme.text}`}
                     >
+                      {/*  */}
                       <img
-                        className="h-12 w-12 hover:scale-125 transition-transform  duration-300 ease-in-out filter  hover:drop-shadow-[0_6px_5px_rgba(255,215,0,0.7)]   "
+                        className={`h-14 w-14 hover:scale-125 transition-transform  duration-300 ease-in-out filter hover:drop-shadow-[0_6px_5px_rgba(255,217,0,0.6)] `}
                         src={skill.icon}
                       />
                     </span>

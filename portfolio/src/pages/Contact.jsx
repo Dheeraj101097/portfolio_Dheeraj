@@ -8,12 +8,13 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex flex-col md:flex-row items-start gap-8">
           <LeftComponent />
-          <section className="relative z-10 overflow-hidden  py-12 dark:bg-dark ">
+          <section className="relative z-10 overflow-hidden  mx-auto  py-12 dark:bg-dark ">
+            {/* change this */}
             <div className="-mx-4 flex flex-wrap lg:justify-between">
               {/*  */}
               <div className="w-full px-4   lg:w-1/2 xl:w-5/12">
                 <div
-                  className={`relative rounded-lg p-5 mx-10 w-[18rem] sm:w-[30rem] md:w-[28rem] lg:w-[32rem] ${theme.bg} border-2 ${theme.border} ${theme.text} shadow-lg dark:bg-dark-2 `}
+                  className={`relative rounded-lg p-5 mx-10 w-[18rem] sm:w-[30rem] md:w-[20rem] lg:w-[32rem] ${theme.bg} border-2 ${theme.border} ${theme.text} shadow-lg dark:bg-dark-2 `}
                 >
                   <div>
                     <h2 className="mb-4 mt-8 text-lg font-medium uppercase text-teal-500 sm:text-[30px] lg:text-[36px] xl:text-[40px]">
